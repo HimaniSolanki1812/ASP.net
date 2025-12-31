@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="first_web.aspx" />
     <Content Include="images\doll.jpg" />
+    <Content Include="Validator.aspx" />
     <Content Include="Web.config" />
     <Content Include="Ads.xml" />
   </ItemGroup>
@@ -81,6 +82,13 @@
       <DependentUpon>first_web.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validator.aspx.cs">
+      <DependentUpon>Validator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Validator.aspx.designer.cs">
+      <DependentUpon>Validator.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -91,7 +99,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Files\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

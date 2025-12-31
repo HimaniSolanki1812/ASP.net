@@ -67,11 +67,39 @@
         </p>
         <p>
             <asp:FileUpload ID="FileUpload2" runat="server" />
+        &nbsp;&nbsp;&nbsp;&nbsp;
         </p>
 
         <p>
-            <asp:Button ID="Button2" runat="server" Text="Button" />
+            <asp:Button ID="FileUpload1" runat="server" Text="Upload" OnClick="Button2_Click" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
             </p>
+        <p>
+            &nbsp;</p>
+        <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
+            <asp:View ID="View1" runat="server">
+                Hiiiiiiiiii This is from view 1<br />
+                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click1" Text="next" />
+            </asp:View>
+            <asp:View ID="View2" runat="server">
+                This is from view 2<br /> &nbsp;<asp:Button ID="Button7" runat="server" OnClick="Button7_Click" Text="Previous" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="Button8" runat="server" OnClick="Button8_Click" Text="Next" />
+            </asp:View>
+            <asp:View ID="View3" runat="server">
+                This is from view 3<br />
+                <asp:Button ID="Button9" runat="server" OnClick="Button9_Click" Text="Previous" />
+            </asp:View>
+        </asp:MultiView>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
 
     </form>
 </body>
