@@ -67,19 +67,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="clientside_aspx.aspx" />
     <Content Include="first_web.aspx" />
     <Content Include="images\doll.jpg" />
+    <Content Include="Login.aspx" />
     <Content Include="Validator.aspx" />
     <Content Include="Web.config" />
     <Content Include="Ads.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clientside_aspx.aspx.cs">
+      <DependentUpon>clientside_aspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="clientside_aspx.aspx.designer.cs">
+      <DependentUpon>clientside_aspx.aspx</DependentUpon>
+    </Compile>
     <Compile Include="first_web.aspx.cs">
       <DependentUpon>first_web.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="first_web.aspx.designer.cs">
       <DependentUpon>first_web.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validator.aspx.cs">

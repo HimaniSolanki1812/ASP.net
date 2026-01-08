@@ -84,7 +84,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="TextBox6" runat="server" OnTextChanged="TextBox4_TextChanged"></asp:TextBox>
 &nbsp;
-            <asp:CustomValidator ID="CustomValidator1" runat="server" ControlToValidate="TextBox6" ErrorMessage="CustomValidator">*</asp:CustomValidator>
+            <asp:CustomValidator ID="CustomValidator1" runat="server" ControlToValidate="TextBox6" ErrorMessage="CustomValidator" ForeColor="Red">*</asp:CustomValidator>
             <br />
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" ShowMessageBox="True" />
             <br />
